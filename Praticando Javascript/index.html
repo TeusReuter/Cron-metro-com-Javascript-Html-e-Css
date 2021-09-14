@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Cronômetro</title>
+</head>
+	<style>
+	.cron {
+		width: all;
+		display: flex;
+		flex-wrap: wrap;
+		position: absolute;
+		bottom: 380px;
+		left: 370px;
+		justify-content: center;
+		font-weight: bold;
+		font-size: 80px;
+		color: #18dcff;
+	}
+
+	.btn{
+		position: absolute;
+		bottom: 250px;
+		left: 280px;
+		font-size: 40px;
+
+	
+	}
+
+	header {
+		top: 20px;
+	}
+	
+
+	</style>
+	<header style="font-size: 60px; font-weight: bold; color: #341f97; position: absolute; left: 260px;">Cronômetro com JavaScript</header>
+<body>
+
+	<div class="cron">
+		<form name="form_main">
+			<span id="hour">00</span>:<span id="minute">00</span>:<span id="second">00</span>:<span id="millisecond">000</span>
+	</div>
+
+	<div class="btn">
+		<button type="button" style="background-color: #009432; width: 200px; height: 100px; border-radius: 10px;" name="start">Start</button>
+		<button type="button" style="background-color:#ff3838;  width: 200px; height: 100px; border-radius: 10px;" name="pause">Pause</button>
+		<button type="button" style="background-color:#ffaf40;  width: 200px; height: 100px; border-radius: 10px;" name="reset">Reset</button>
+		
+	</div>
+
+	</form>
+	<script src="js/cronometro.js"></script>
+</body>
+	
+</html>
